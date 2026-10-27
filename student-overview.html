@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f30">
+  <title>Student overview | Campus Finds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard">
+    <aside class="dashboard-sidebar">
+      <a class="brand" href="index.html" aria-label="Campus Finds home">
+        <span class="brand-copy">
+          <span class="brand-name">CvSU <span class="dashboard-campus-tag">Cavite City</span></span>
+          <span class="brand-caption">Cavite State University<br>Cavite City Campus</span>
+        </span>
+      </a>
+
+      <div class="dashboard-nav-group">
+        <a class="dashboard-product" href="student-overview.html">
+          <strong>Campus Finds</strong>
+          <span>Student lost &amp; found</span>
+        </a>
+        <p class="dashboard-nav-label">Menu</p>
+        <nav class="dashboard-nav" aria-label="Student navigation">
+          <a class="active" href="student-overview.html"><span aria-hidden="true">▦</span> Overview</a>
+        </nav>
+      </div>
+
+      <div class="dashboard-sidebar-bottom">
+        <div class="dashboard-tip">
+          <span aria-hidden="true">✧</span>
+          <strong>Welcome to Campus Finds.</strong>
+          <p>View campus lost-and-found activity from your overview.</p>
+        </div>
+        <a class="dashboard-help" href="mailto:studentaffairs@cvsu.edu.ph">Help &amp; campus guidelines</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <span class="dashboard-campus-name"><span class="mini-seal" aria-hidden="true">Cv</span> Cavite City Campus <span class="portal-pill">Student portal</span><a class="admin-portal-link" href="admin-dashboard.html">Admin demo</a></span>
+        <div class="dashboard-user">
+          <button class="notification-button" type="button" aria-label="Notifications">♧</button>
+          <a class="dashboard-profile-link" href="student-profile.html" aria-label="Open student profile">
+            <span class="user-avatar" id="user-avatar" aria-hidden="true">S</span>
+            <span class="user-name"><span id="user-name">Student</span><small id="user-program">Cavite City Campus</small></span>
+          </a>
+          <a href="index.html" class="logout-link">Log out</a>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <div class="dashboard-heading">
+          <div>
+            <p class="dashboard-eyebrow">Your campus, connected</p>
+            <h1>Good morning!</h1>
+            <p class="dashboard-subtitle">A small act of care can make a big difference for someone on campus.</p>
+          </div>
+          <span class="dashboard-date">Cavite City Campus</span>
+        </div>
+
+        <section class="dashboard-hero" aria-labelledby="hero-heading">
+          <div>
+            <h2 id="hero-heading">Lost it? Found it? Let’s reconnect.</h2>
+            <p>Campus lost-and-found activity in one place. See the latest updates from our community.</p>
+          </div>
+          <span class="hero-decoration" aria-hidden="true">CvSU</span>
+        </section>
+
+        <section class="dashboard-stats" aria-label="Your activity">
+          <article class="stat-card">
+            <span class="stat-icon green" aria-hidden="true">▤</span>
+            <div><p>Items waiting owners</p><strong>0</strong><small>Found across campus</small></div>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon blue" aria-hidden="true">⌕</span>
+            <div><p>Lost item reports</p><strong>0</strong><small>Help find an item</small></div>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon gold" aria-hidden="true">◇</span>
+            <div><p>Resolved this month</p><strong>0</strong><small>Every return matters</small></div>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon green" aria-hidden="true">▣</span>
+            <div><p>Your active requests</p><strong>0</strong><small>Reports and claims</small></div>
+          </article>
+        </section>
+
+        <div class="dashboard-columns">
+          <section class="reported-section" id="reported-items" aria-labelledby="reported-heading">
+            <div class="section-heading">
+              <h2 id="reported-heading">Recently reported</h2>
+            </div>
+            <div class="empty-items">
+              <span class="empty-items-icon" aria-hidden="true">⌕</span>
+              <h3>No items reported yet</h3>
+              <p>When a student reports a lost or found item, it will appear here.</p>
+            </div>
+          </section>
+
+          <aside class="updates-section" aria-labelledby="updates-heading">
+            <div class="section-heading">
+              <h2 id="updates-heading">Your latest updates</h2>
+            </div>
+            <div class="empty-updates">
+              <span aria-hidden="true">♧</span>
+              <p>You’re all caught up.</p>
+              <small>Campus activity updates will show up here.</small>
+            </div>
+          </aside>
+        </div>
+
+        <section class="dashboard-guide" aria-label="How Campus Finds works">
+          <span class="guide-shield" aria-hidden="true">♧</span>
+          <strong>Safe returns, every time.</strong>
+          <span>Find a matching item</span>
+          <span>Verify ownership privately</span>
+          <span>Collect with your student ID</span>
+        </section>
+
+        <footer class="dashboard-footer">
+          <span>Campus Finds · A service for the CvSU Cavite City Campus community</span>
+          <span>Privacy policy · Campus guidelines</span>
+        </footer>
+      </div>
+    </main>
+  </div>
+  <script>
+    const profileStorageKey = "campus-finds-student-profile";
+    const profile = JSON.parse(localStorage.getItem(profileStorageKey) || "{}");
+    const displayName = [profile.firstName, profile.lastName].filter(Boolean).join(" ");
+
+    if (displayName) {
+      document.querySelector("#user-name").textContent = displayName;
+      document.querySelector("#user-avatar").textContent = displayName.charAt(0).toUpperCase();
+    }
+
+    if (profile.program) {
+      document.querySelector("#user-program").textContent = profile.program;
+    }
+  </script>
+</body>
+</html>

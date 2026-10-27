@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f30">
+  <title>Log in | Campus Finds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="story" aria-labelledby="story-heading">
+      <a class="brand" href="#" aria-label="Campus Finds home">
+        <span class="brand-seal" aria-hidden="true">CvSU</span>
+        <span class="brand-copy">
+          <span class="brand-name">CvSU</span>
+          <span class="brand-caption">Campus Finds</span>
+        </span>
+      </a>
+
+      <div class="story-content">
+        <p class="eyebrow">Campus Finds</p>
+        <h1 id="story-heading">Lost it? Found it?<br>Let’s reconnect.</h1>
+        <p class="story-description">From your first lecture to your last, help lost items find their way home across our campus community.</p>
+
+        <svg class="illustration" viewBox="0 0 360 245" role="img" aria-labelledby="illustration-title">
+          <title id="illustration-title">A canvas tote bag and a found student ID card</title>
+          <ellipse cx="185" cy="218" rx="116" ry="13" fill="#092a20" opacity=".35"/>
+          <path d="M113 69c4-29 22-46 48-46s43 17 48 46" fill="none" stroke="#e4d5b4" stroke-width="13" stroke-linecap="round"/>
+          <path d="M98 67c4-8 12-12 22-12h78c11 0 19 5 22 14l20 132c2 13-7 23-20 23H98c-13 0-22-10-20-23L98 67Z" fill="#eee4cf"/>
+          <path d="m101 74 19-13h78l18 13-11 110c-1 9-7 15-16 15h-62c-9 0-15-6-16-15L101 74Z" fill="#e5d8bf"/>
+          <path d="m96 88 18-10 13 12-7 106c-1 8-4 13-11 14-10 1-20-5-19-17L96 88Z" fill="#f5ecda" opacity=".7"/>
+          <path d="M219 89c10-5 18-2 21 8l34 107c3 10-1 16-11 19l-46 13c-9 3-15 0-18-9l-35-106c-3-9 0-15 9-18l46-14Z" fill="#315b7a"/>
+          <path d="m185 112 48-16 5 15-48 15-5-14Z" fill="#e0c681"/>
+          <circle cx="227" cy="106" r="4.4" fill="#f4e7c4"/>
+          <path d="m206 144 20-7 4 9-20 7-4-9Z" fill="#dce5e6" opacity=".85"/>
+          <path d="m211 159 30-10 3 8-30 10-3-8Z" fill="#dce5e6" opacity=".65"/>
+          <path d="M91 178c21 12 41 15 61 11" fill="none" stroke="#f5ecda" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+          <path d="m269 44 4 9 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1 4-9Z" fill="#d4b873" opacity=".8"/>
+          <circle cx="75" cy="108" r="3" fill="#d4b873" opacity=".8"/>
+          <circle cx="293" cy="163" r="2" fill="#fff" opacity=".65"/>
+        </svg>
+
+        <div class="story-note">
+          <span class="note-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3 5 6v5c0 4.7 2.9 8.1 7 10 4.1-1.9 7-5.3 7-10V6l-7-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span><strong>Safe returns, every time.</strong><br>Your information stays private. Connect with your campus community.</span>
+        </div>
+      </div>
+
+      <footer class="story-footer">A service for the CvSU campus community</footer>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <span class="topbar-campus"><span class="mini-seal" aria-hidden="true">Cv</span> Cavite State University</span>
+        <span class="login-portals">
+          <a href="student-overview.html">Student portal</a>
+          <a href="admin-dashboard.html">Admin demo</a>
+        </span>
+      </header>
+
+      <section class="login-area" aria-labelledby="login-heading">
+        <div class="login-card">
+          <p class="eyebrow">Welcome back</p>
+          <h2 id="login-heading">Log in to Campus Finds</h2>
+          <p class="login-intro">Your lost items, your campus, your community.<br>Take your place back in the circle.</p>
+
+          <form id="login-form">
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="username" placeholder="you@cvsu.edu.ph" required>
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <div class="input-wrap">
+                <input class="password-input" id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your 8-character password" minlength="8" maxlength="8" required>
+                <button class="visibility-toggle" id="toggle-password" type="button" aria-label="Show password" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M2.5 12s3.3-6 9.5-6 9.5 6 9.5 6-3.3 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember" for="remember">
+                <input id="remember" name="remember" type="checkbox">
+                <span>Remember me</span>
+              </label>
+              <a class="text-link" href="#forgot-password">Forgot password?</a>
+            </div>
+
+            <button class="submit-button" type="submit">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M10 17 15 12 10 7M15 12H3m9-8h6a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Log in
+            </button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="signup-prompt">New to Campus Finds? <a class="text-link" href="register.html">Create an account</a></p>
+
+          <div class="security-note">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <span>Using a shared computer? Leave “Remember me” unchecked and log out when you’re done.</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <span>Privacy first. Campus always.</span>
+        <span class="terms"><a href="#terms">Terms of Use</a> · <a href="#privacy">Privacy Policy</a></span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    const accountsStorageKey = "campus-finds-accounts";
+    const passwordInput = document.querySelector("#password");
+    const passwordToggle = document.querySelector("#toggle-password");
+    const loginForm = document.querySelector("#login-form");
+    const formMessage = document.querySelector("#form-message");
+
+    passwordToggle.addEventListener("click", () => {
+      const showingPassword = passwordInput.type === "password";
+      passwordInput.type = showingPassword ? "text" : "password";
+      passwordToggle.setAttribute("aria-pressed", String(showingPassword));
+      passwordToggle.setAttribute("aria-label", showingPassword ? "Hide password" : "Show password");
+    });
+
+    if (new URLSearchParams(window.location.search).has("registered")) {
+      formMessage.textContent = "Account created. You can now log in with your campus email and password.";
+      formMessage.classList.add("success");
+      const savedProfile = JSON.parse(localStorage.getItem("campus-finds-student-profile") || "{}");
+      if (savedProfile.email) {
+        document.querySelector("#email").value = savedProfile.email;
+      }
+    }
+
+    async function hashPassword(password, salt) {
+      const encoded = new TextEncoder().encode(`${salt}:${password}`);
+      const digest = await crypto.subtle.digest("SHA-256", encoded);
+      return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+    }
+
+    loginForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      formMessage.textContent = "";
+      formMessage.classList.remove("success");
+
+      try {
+        const savedAccounts = localStorage.getItem(accountsStorageKey);
+        const accounts = savedAccounts ? JSON.parse(savedAccounts) : [];
+        if (!Array.isArray(accounts)) {
+          throw new Error("Saved account data has an unexpected format.");
+        }
+
+        const email = document.querySelector("#email").value.trim().toLowerCase();
+        const account = accounts.find((savedAccount) => savedAccount.email === email);
+        if (!account || await hashPassword(passwordInput.value, account.salt) !== account.passwordHash) {
+          formMessage.textContent = "Email or password is incorrect. If you do not have an account yet, create one first.";
+          return;
+        }
+
+        localStorage.setItem("campus-finds-student-profile", JSON.stringify({
+          firstName: account.firstName,
+          lastName: account.lastName,
+          studentNumber: account.studentNumber,
+          program: account.program,
+          email: account.email
+        }));
+        window.location.href = "student-overview.html";
+      } catch (error) {
+        console.error("Unable to log in the student account.", error);
+        formMessage.textContent = "Could not log in using this browser. Check browser storage settings and try again.";
+      }
+    });
+  </script>
+</body>
+</html>
