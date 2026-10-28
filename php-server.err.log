@@ -1,0 +1,546 @@
+[Wed Oct 28 19:24:08 2026] PHP 8.2.12 Development Server (http://127.0.0.1:8000) started
+[Wed Oct 28 19:24:17 2026] 127.0.0.1:60026 Accepted
+[Wed Oct 28 19:24:17 2026] 127.0.0.1:60026 [200]: GET /
+[Wed Oct 28 19:24:17 2026] 127.0.0.1:60026 Closing
+[Wed Oct 28 19:24:18 2026] 127.0.0.1:53186 Accepted
+[Wed Oct 28 19:24:18 2026] 127.0.0.1:53186 [200]: GET /style.css
+[Wed Oct 28 19:24:18 2026] 127.0.0.1:53186 Closing
+[Wed Oct 28 19:24:19 2026] 127.0.0.1:55694 Accepted
+[Wed Oct 28 19:24:19 2026] 127.0.0.1:55694 [200]: GET /api.php?action=current
+[Wed Oct 28 19:24:19 2026] 127.0.0.1:55694 Closing
+[Wed Oct 28 19:24:19 2026] 127.0.0.1:53880 Accepted
+[Wed Oct 28 19:24:20 2026] 127.0.0.1:59295 Accepted
+[Wed Oct 28 19:24:20 2026] 127.0.0.1:59295 [200]: GET /style.css
+[Wed Oct 28 19:24:20 2026] 127.0.0.1:59295 Closing
+[Wed Oct 28 19:24:20 2026] 127.0.0.1:53880 [404]: GET /favicon.ico - No such file or directory
+[Wed Oct 28 19:24:20 2026] 127.0.0.1:53880 Closing
+[Wed Oct 28 19:26:29 2026] 127.0.0.1:55542 Accepted
+[Wed Oct 28 19:26:29 2026] 127.0.0.1:55542 [200]: GET /
+[Wed Oct 28 19:26:29 2026] 127.0.0.1:55542 Closing
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:64603 Accepted
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:64603 [200]: GET /
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:64603 Closing
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:64268 Accepted
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:64268 [200]: GET /style.css
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:64268 Closing
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:59664 Accepted
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:59664 [200]: GET /api.php?action=current
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:59664 Closing
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:62656 Accepted
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:62656 [200]: GET /style.css
+[Wed Oct 28 19:28:11 2026] 127.0.0.1:62656 Closing
+[Wed Oct 28 19:28:53 2026] 127.0.0.1:56281 Accepted
+[Wed Oct 28 19:28:53 2026] 127.0.0.1:56281 [401]: POST /api.php?action=login
+[Wed Oct 28 19:28:53 2026] 127.0.0.1:56281 Closing
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:49618 Accepted
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:49618 [200]: GET /register.html
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:49618 Closing
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:52115 Accepted
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:52115 [200]: GET /style.css
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:52115 Closing
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:62995 Accepted
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:62995 [200]: GET /api.php?action=current
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:62995 Closing
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:51853 Accepted
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:51853 [200]: GET /style.css
+[Wed Oct 28 19:29:00 2026] 127.0.0.1:51853 Closing
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:63167 Accepted
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:63167 [200]: GET /index.html
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:63167 Closing
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:56152 Accepted
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:54379 Accepted
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:54379 [200]: GET /style.css
+[Wed Oct 28 19:29:35 2026] 127.0.0.1:54379 Closing
+[Wed Oct 28 19:29:36 2026] 127.0.0.1:56152 [200]: GET /api.php?action=current
+[Wed Oct 28 19:29:36 2026] 127.0.0.1:56152 Closing
+[Wed Oct 28 19:29:36 2026] 127.0.0.1:49586 Accepted
+[Wed Oct 28 19:29:36 2026] 127.0.0.1:49586 [404]: GET /favicon.ico - No such file or directory
+[Wed Oct 28 19:29:36 2026] 127.0.0.1:49586 Closing
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:57408 Accepted
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:57408 [200]: POST /api.php?action=login
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:57408 Closing
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:65275 Accepted
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:65275 [200]: GET /student-overview.php
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:65275 Closing
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:63581 Accepted
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:53990 Accepted
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:63581 [200]: GET /style.css
+[Wed Oct 28 19:29:42 2026] 127.0.0.1:63581 Closing
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:53990 [200]: POST /api.php?action=logout
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:53990 Closing
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:63201 Accepted
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:63201 [200]: GET /index.html
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:52518 Accepted
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:63201 Closing
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:52518 [200]: GET /style.css
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:52518 Closing
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:59080 Accepted
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:59080 [200]: GET /api.php?action=current
+[Wed Oct 28 19:29:50 2026] 127.0.0.1:59080 Closing
+[Wed Oct 28 19:29:59 2026] 127.0.0.1:56692 Accepted
+[Wed Oct 28 19:29:59 2026] 127.0.0.1:56692 [200]: GET /index.html
+[Wed Oct 28 19:29:59 2026] 127.0.0.1:56692 Closing
+[Wed Oct 28 19:29:59 2026] 127.0.0.1:53416 Accepted
+[Wed Oct 28 19:29:59 2026] 127.0.0.1:53416 [200]: GET /style.css
+[Wed Oct 28 19:29:59 2026] 127.0.0.1:53416 Closing
+[Wed Oct 28 19:30:00 2026] 127.0.0.1:56294 Accepted
+[Wed Oct 28 19:30:00 2026] 127.0.0.1:56294 [200]: GET /api.php?action=current
+[Wed Oct 28 19:30:00 2026] 127.0.0.1:56294 Closing
+[Wed Oct 28 19:30:00 2026] 127.0.0.1:50327 Accepted
+[Wed Oct 28 19:30:00 2026] 127.0.0.1:50327 [200]: GET /style.css
+[Wed Oct 28 19:30:00 2026] 127.0.0.1:50327 Closing
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:58755 Accepted
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:58755 [200]: POST /api.php?action=login
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:58755 Closing
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:57797 Accepted
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:57797 [200]: GET /student-overview.php
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:57797 Closing
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:51410 Accepted
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:51410 [200]: GET /style.css
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:51410 Closing
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:52895 Accepted
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:52895 [200]: GET /style.css
+[Wed Oct 28 19:30:40 2026] 127.0.0.1:52895 Closing
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:51797 Accepted
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:51797 [200]: GET /my-reports.php
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:51797 Closing
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:61605 Accepted
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:61605 [200]: GET /style.css
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:61605 Closing
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:53632 Accepted
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:53632 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:53632 Closing
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:51445 Accepted
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:51445 [200]: GET /style.css
+[Wed Oct 28 19:30:48 2026] 127.0.0.1:51445 Closing
+[Wed Oct 28 19:32:02 2026] 127.0.0.1:56690 Accepted
+[Wed Oct 28 19:32:02 2026] 127.0.0.1:56690 [200]: GET /student-overview.php
+[Wed Oct 28 19:32:02 2026] 127.0.0.1:56690 Closing
+[Wed Oct 28 19:32:02 2026] 127.0.0.1:56767 Accepted
+[Wed Oct 28 19:32:02 2026] 127.0.0.1:56767 [200]: GET /style.css
+[Wed Oct 28 19:32:02 2026] 127.0.0.1:56767 Closing
+[Wed Oct 28 19:32:03 2026] 127.0.0.1:50366 Accepted
+[Wed Oct 28 19:32:03 2026] 127.0.0.1:50366 [200]: GET /style.css
+[Wed Oct 28 19:32:03 2026] 127.0.0.1:50366 Closing
+[Wed Oct 28 19:32:05 2026] 127.0.0.1:57312 Accepted
+[Wed Oct 28 19:32:05 2026] 127.0.0.1:57312 [200]: GET /my-reports.php
+[Wed Oct 28 19:32:05 2026] 127.0.0.1:57312 Closing
+[Wed Oct 28 19:32:05 2026] 127.0.0.1:54577 Accepted
+[Wed Oct 28 19:32:05 2026] 127.0.0.1:54577 [200]: GET /style.css
+[Wed Oct 28 19:32:05 2026] 127.0.0.1:54577 Closing
+[Wed Oct 28 19:32:06 2026] 127.0.0.1:62589 Accepted
+[Wed Oct 28 19:32:06 2026] 127.0.0.1:62589 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:32:06 2026] 127.0.0.1:62589 Closing
+[Wed Oct 28 19:32:06 2026] 127.0.0.1:59686 Accepted
+[Wed Oct 28 19:32:06 2026] 127.0.0.1:59686 [200]: GET /style.css
+[Wed Oct 28 19:32:06 2026] 127.0.0.1:59686 Closing
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:54466 Accepted
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:54466 [200]: GET /report-item.php
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:54466 Closing
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:52002 Accepted
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:52002 [200]: GET /style.css
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:52002 Closing
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:59295 Accepted
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:59295 [200]: GET /style.css
+[Wed Oct 28 19:33:49 2026] 127.0.0.1:59295 Closing
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:55965 Accepted
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:55965 [200]: GET /my-reports.php
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:55965 Closing
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:52939 Accepted
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:52939 [200]: GET /style.css
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:52939 Closing
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:56408 Accepted
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:56408 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:56408 Closing
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:53836 Accepted
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:53836 [200]: GET /style.css
+[Wed Oct 28 19:35:47 2026] 127.0.0.1:53836 Closing
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:52309 Accepted
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:52309 [200]: GET /my-reports.php
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:52309 Closing
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:50991 Accepted
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:50991 [200]: GET /style.css
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:50991 Closing
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:52196 Accepted
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:52196 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:52196 Closing
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:63735 Accepted
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:63735 [200]: GET /style.css
+[Wed Oct 28 19:36:13 2026] 127.0.0.1:63735 Closing
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:61429 Accepted
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:61429 [200]: GET /browse-items.php?type=found
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:61429 Closing
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:57517 Accepted
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:57517 [200]: GET /style.css
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:57517 Closing
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:62458 Accepted
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:51564 Accepted
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:51564 [200]: GET /style.css
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:51564 Closing
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:62458 [200]: GET /api.php?action=browse&q=&type=found
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:62458 Closing
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:53951 Accepted
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:53951 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 19:36:20 2026] 127.0.0.1:53951 Closing
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:64834 Accepted
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:64834 [200]: GET /my-reports.php
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:64834 Closing
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:64082 Accepted
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:64082 [200]: GET /style.css
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:64082 Closing
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:50445 Accepted
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:50445 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:50445 Closing
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:53439 Accepted
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:53439 [200]: GET /style.css
+[Wed Oct 28 19:36:31 2026] 127.0.0.1:53439 Closing
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:63871 Accepted
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:63871 [200]: GET /browse-items.php?type=found
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:63871 Closing
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:52183 Accepted
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:52183 [200]: GET /style.css
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:52183 Closing
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:51229 Accepted
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:51229 [200]: GET /api.php?action=browse&q=&type=found
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:51229 Closing
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:64886 Accepted
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:64886 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:64886 Closing
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:59308 Accepted
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:59308 [200]: GET /style.css
+[Wed Oct 28 19:36:36 2026] 127.0.0.1:59308 Closing
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:59205 Accepted
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:59205 [200]: GET /my-reports.php
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:59205 Closing
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:60017 Accepted
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:60017 [200]: GET /style.css
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:60017 Closing
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:52783 Accepted
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:52783 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:36:44 2026] 127.0.0.1:52783 Closing
+[Wed Oct 28 19:36:45 2026] 127.0.0.1:60167 Accepted
+[Wed Oct 28 19:36:45 2026] 127.0.0.1:60167 [200]: GET /style.css
+[Wed Oct 28 19:36:45 2026] 127.0.0.1:60167 Closing
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:58052 Accepted
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:58052 [200]: GET /browse-items.php?type=found
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:58052 Closing
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:57106 Accepted
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:57106 [200]: GET /style.css
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:57106 Closing
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:52643 Accepted
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:59496 Accepted
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:59496 [200]: GET /style.css
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:52643 [200]: GET /api.php?action=browse&q=&type=found
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:52643 Closing
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:59496 Closing
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:51585 Accepted
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:51585 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 19:37:11 2026] 127.0.0.1:51585 Closing
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:60878 Accepted
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:60878 [200]: GET /browse-items.php?q=&type=found
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:60878 Closing
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:50794 Accepted
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:50794 [200]: GET /style.css
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:50794 Closing
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:55147 Accepted
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:55147 [200]: GET /api.php?action=browse&q=&type=found
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:55147 Closing
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:61888 Accepted
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:61888 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:61888 Closing
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:54243 Accepted
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:54243 [200]: GET /style.css
+[Wed Oct 28 19:37:15 2026] 127.0.0.1:54243 Closing
+[Wed Oct 28 19:38:50 2026] 127.0.0.1:65343 Accepted
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:65343 [200]: POST /api.php?action=login
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:65343 Closing
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:56505 Accepted
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:56505 [200]: GET /student-overview.php
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:56505 Closing
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:65466 Accepted
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:65466 [200]: GET /style.css
+[Wed Oct 28 19:38:51 2026] 127.0.0.1:65466 Closing
+[Wed Oct 28 19:39:37 2026] 127.0.0.1:61052 Accepted
+[Wed Oct 28 19:39:37 2026] 127.0.0.1:59253 Accepted
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:61052 [200]: GET /my-reports.php
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:61052 Closing
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:59253 [200]: GET /style.css
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:59253 Closing
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:51261 Accepted
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:51261 [200]: GET /api.php?action=my-items
+[Wed Oct 28 19:39:38 2026] 127.0.0.1:51261 Closing
+[Wed Oct 28 19:39:46 2026] 127.0.0.1:64468 Accepted
+[Wed Oct 28 19:39:46 2026] 127.0.0.1:64029 Accepted
+[Wed Oct 28 19:39:46 2026] 127.0.0.1:64468 [200]: GET /browse-items.php?type=found
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:64468 Closing
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:64029 [200]: GET /style.css
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:64029 Closing
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:57236 Accepted
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:57236 [200]: GET /api.php?action=browse&q=&type=found
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:57236 Closing
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:51518 Accepted
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:51518 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 19:39:47 2026] 127.0.0.1:51518 Closing
+[Wed Oct 28 19:40:11 2026] 127.0.0.1:55498 Accepted
+[Wed Oct 28 19:40:11 2026] 127.0.0.1:55498 [200]: GET /student-overview.php
+[Wed Oct 28 19:40:11 2026] 127.0.0.1:55498 Closing
+[Wed Oct 28 19:40:11 2026] 127.0.0.1:54734 Accepted
+[Wed Oct 28 19:40:11 2026] 127.0.0.1:54734 [200]: GET /style.css
+[Wed Oct 28 19:40:11 2026] 127.0.0.1:54734 Closing
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:63974 Accepted
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:63974 [200]: GET /student-overview.php
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:63974 Closing
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:59570 Accepted
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:59570 [200]: GET /style.css
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:59570 Closing
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:59931 Accepted
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:59931 [200]: GET /style.css
+[Wed Oct 28 19:41:07 2026] 127.0.0.1:59931 Closing
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:65078 Accepted
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:65078 [200]: GET /student-overview.php
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:65078 Closing
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:59456 Accepted
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:59456 [200]: GET /style.css
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:59456 Closing
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:61385 Accepted
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:61385 [200]: GET /style.css
+[Wed Oct 28 19:41:26 2026] 127.0.0.1:61385 Closing
+[Wed Oct 28 19:41:34 2026] 127.0.0.1:65283 Accepted
+[Wed Oct 28 19:41:35 2026] 127.0.0.1:65283 [200]: GET /student-overview.php
+[Wed Oct 28 19:41:35 2026] 127.0.0.1:65283 Closing
+[Wed Oct 28 19:41:35 2026] 127.0.0.1:52178 Accepted
+[Wed Oct 28 19:41:35 2026] 127.0.0.1:52178 [200]: GET /style.css
+[Wed Oct 28 19:41:35 2026] 127.0.0.1:52178 Closing
+[Wed Oct 28 19:42:24 2026] 127.0.0.1:54950 Accepted
+[Wed Oct 28 19:42:24 2026] 127.0.0.1:54950 [200]: GET /student-overview.php
+[Wed Oct 28 19:42:24 2026] 127.0.0.1:54950 Closing
+[Wed Oct 28 19:42:24 2026] 127.0.0.1:63095 Accepted
+[Wed Oct 28 19:42:24 2026] 127.0.0.1:63095 [200]: GET /style.css
+[Wed Oct 28 19:42:24 2026] 127.0.0.1:63095 Closing
+[Wed Oct 28 19:45:11 2026] 127.0.0.1:49727 Accepted
+[Wed Oct 28 19:45:11 2026] 127.0.0.1:49727 [200]: GET /student-overview.php
+[Wed Oct 28 19:45:11 2026] 127.0.0.1:49727 Closing
+[Wed Oct 28 19:45:11 2026] 127.0.0.1:54783 Accepted
+[Wed Oct 28 19:45:11 2026] 127.0.0.1:54783 [200]: GET /style.css
+[Wed Oct 28 19:45:11 2026] 127.0.0.1:54783 Closing
+[Wed Oct 28 19:45:12 2026] 127.0.0.1:53509 Accepted
+[Wed Oct 28 19:45:12 2026] 127.0.0.1:53509 [200]: GET /style.css
+[Wed Oct 28 19:45:12 2026] 127.0.0.1:53509 Closing
+[Wed Oct 28 19:45:55 2026] 127.0.0.1:60413 Accepted
+[Wed Oct 28 19:45:55 2026] 127.0.0.1:62033 Accepted
+[Wed Oct 28 19:45:55 2026] 127.0.0.1:60413 [200]: GET /student-overview.php
+[Wed Oct 28 19:45:55 2026] 127.0.0.1:60413 Closing
+[Wed Oct 28 19:45:55 2026] 127.0.0.1:62033 [200]: GET /style.css
+[Wed Oct 28 19:45:55 2026] 127.0.0.1:62033 Closing
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:62877 Accepted
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:62877 [200]: GET /student-overview.php
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:62877 Closing
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:58520 Accepted
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:58520 [200]: GET /style.css
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:58520 Closing
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:60237 Accepted
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:60237 [200]: GET /style.css
+[Wed Oct 28 19:46:40 2026] 127.0.0.1:60237 Closing
+[Wed Oct 28 19:47:04 2026] 127.0.0.1:62633 Accepted
+[Wed Oct 28 19:47:04 2026] 127.0.0.1:62633 [200]: GET /student-overview.php
+[Wed Oct 28 19:47:04 2026] 127.0.0.1:62633 Closing
+[Wed Oct 28 19:47:04 2026] 127.0.0.1:61847 Accepted
+[Wed Oct 28 19:47:04 2026] 127.0.0.1:61847 [200]: GET /style.css
+[Wed Oct 28 19:47:04 2026] 127.0.0.1:61847 Closing
+[Wed Oct 28 19:47:55 2026] 127.0.0.1:64546 Accepted
+[Wed Oct 28 19:47:55 2026] 127.0.0.1:64546 [200]: GET /student-overview.php
+[Wed Oct 28 19:47:55 2026] 127.0.0.1:64546 Closing
+[Wed Oct 28 19:47:55 2026] 127.0.0.1:50754 Accepted
+[Wed Oct 28 19:47:55 2026] 127.0.0.1:50754 [200]: GET /style.css
+[Wed Oct 28 19:47:55 2026] 127.0.0.1:50754 Closing
+[Wed Oct 28 19:47:56 2026] 127.0.0.1:61785 Accepted
+[Wed Oct 28 19:47:56 2026] 127.0.0.1:61785 [200]: GET /style.css
+[Wed Oct 28 19:47:56 2026] 127.0.0.1:61785 Closing
+[Wed Oct 28 19:48:06 2026] 127.0.0.1:57917 Accepted
+[Wed Oct 28 19:48:06 2026] 127.0.0.1:57917 [200]: GET /student-overview.php
+[Wed Oct 28 19:48:06 2026] 127.0.0.1:57917 Closing
+[Wed Oct 28 19:48:06 2026] 127.0.0.1:64384 Accepted
+[Wed Oct 28 19:48:06 2026] 127.0.0.1:64384 [200]: GET /style.css
+[Wed Oct 28 19:48:06 2026] 127.0.0.1:64384 Closing
+[Wed Oct 28 19:50:03 2026] 127.0.0.1:50837 Accepted
+[Wed Oct 28 19:50:04 2026] 127.0.0.1:50837 [200]: GET /student-overview.php
+[Wed Oct 28 19:50:04 2026] 127.0.0.1:50837 Closing
+[Wed Oct 28 19:50:04 2026] 127.0.0.1:53919 Accepted
+[Wed Oct 28 19:50:04 2026] 127.0.0.1:53919 [200]: GET /style.css
+[Wed Oct 28 19:50:04 2026] 127.0.0.1:53919 Closing
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:60874 Accepted
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:60874 [200]: GET /student-profile.php
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:60874 Closing
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:53413 Accepted
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:53413 [200]: GET /style.css
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:53413 Closing
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:56858 Accepted
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:56858 [200]: GET /style.css
+[Wed Oct 28 19:53:15 2026] 127.0.0.1:56858 Closing
+[Wed Oct 28 19:53:25 2026] 127.0.0.1:61450 Accepted
+[Wed Oct 28 19:53:25 2026] 127.0.0.1:61450 [200]: POST /api.php?action=profile
+[Wed Oct 28 19:53:25 2026] 127.0.0.1:61450 Closing
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:49829 Accepted
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:49829 [200]: GET /student-profile.php
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:49829 Closing
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:60792 Accepted
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:60792 [200]: GET /style.css
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:60792 Closing
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:62761 Accepted
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:62761 [200]: GET /style.css
+[Wed Oct 28 19:54:09 2026] 127.0.0.1:62761 Closing
+[Wed Oct 28 19:54:15 2026] 127.0.0.1:55537 Accepted
+[Wed Oct 28 19:54:15 2026] PHP Warning:  Undefined array key "password_hash" in C:\Users\ASHBUHAIN\Desktop\ONLINE-LOST-AND-FOUND-MANAGEMENT-FOR-THE-STUDENTS-OF-CAVITE-STATE-UNIV\api.php on line 297
+[Wed Oct 28 19:54:15 2026] Campus Finds API error: password_verify(): Argument #2 ($hash) must be of type string, null given
+[Wed Oct 28 19:54:15 2026] 127.0.0.1:55537 [500]: POST /api.php?action=change-password
+[Wed Oct 28 19:54:15 2026] 127.0.0.1:55537 Closing
+[Wed Oct 28 19:55:06 2026] 127.0.0.1:54391 Accepted
+[Wed Oct 28 19:55:06 2026] 127.0.0.1:54391 [422]: POST /api.php?action=change-password
+[Wed Oct 28 19:55:06 2026] 127.0.0.1:54391 Closing
+[Wed Oct 28 19:55:17 2026] 127.0.0.1:62745 Accepted
+[Wed Oct 28 19:55:17 2026] 127.0.0.1:62745 [422]: POST /api.php?action=change-password
+[Wed Oct 28 19:55:17 2026] 127.0.0.1:62745 Closing
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:51910 Accepted
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:51910 [200]: GET /student-profile.php
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:51910 Closing
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:58381 Accepted
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:58381 [200]: GET /style.css
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:58381 Closing
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:60434 Accepted
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:60434 [200]: GET /style.css
+[Wed Oct 28 19:56:19 2026] 127.0.0.1:60434 Closing
+[Wed Oct 28 19:56:46 2026] 127.0.0.1:55710 Accepted
+[Wed Oct 28 19:56:47 2026] 127.0.0.1:53292 Accepted
+[Wed Oct 28 19:56:47 2026] 127.0.0.1:55710 [200]: GET /student-profile.php
+[Wed Oct 28 19:56:47 2026] 127.0.0.1:55710 Closing
+[Wed Oct 28 19:56:47 2026] 127.0.0.1:53292 [200]: GET /style.css
+[Wed Oct 28 19:56:47 2026] 127.0.0.1:53292 Closing
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:58934 Accepted
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:58934 [200]: GET /
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:58934 Closing
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:57343 Accepted
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:57343 [200]: GET /style.css
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:57343 Closing
+[Wed Oct 28 19:59:14 2026] 127.0.0.1:61279 Accepted
+[Wed Oct 28 19:59:15 2026] 127.0.0.1:61279 [200]: GET /api.php?action=current
+[Wed Oct 28 19:59:15 2026] 127.0.0.1:61279 Closing
+[Wed Oct 28 20:00:29 2026] 127.0.0.1:62417 Accepted
+[Wed Oct 28 20:00:29 2026] 127.0.0.1:62417 [200]: GET /student-profile.php
+[Wed Oct 28 20:00:29 2026] 127.0.0.1:62417 Closing
+[Wed Oct 28 20:00:29 2026] 127.0.0.1:63271 Accepted
+[Wed Oct 28 20:00:29 2026] 127.0.0.1:63271 [200]: GET /style.css
+[Wed Oct 28 20:00:29 2026] 127.0.0.1:63271 Closing
+[Wed Oct 28 20:00:32 2026] 127.0.0.1:50944 Accepted
+[Wed Oct 28 20:00:32 2026] 127.0.0.1:50944 [200]: GET /student-overview.php
+[Wed Oct 28 20:00:32 2026] 127.0.0.1:50944 Closing
+[Wed Oct 28 20:00:32 2026] 127.0.0.1:59034 Accepted
+[Wed Oct 28 20:00:32 2026] 127.0.0.1:59034 [200]: GET /style.css
+[Wed Oct 28 20:00:32 2026] 127.0.0.1:59034 Closing
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:59031 Accepted
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:59031 [200]: POST /api.php?action=logout
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:59031 Closing
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:59011 Accepted
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:59011 [200]: GET /index.html
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:50366 Accepted
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:59011 Closing
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:50366 [200]: GET /style.css
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:50366 Closing
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:50446 Accepted
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:50446 [200]: GET /api.php?action=current
+[Wed Oct 28 20:00:40 2026] 127.0.0.1:50446 Closing
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:62609 Accepted
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:62609 [200]: POST /api.php?action=login
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:62609 Closing
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:56130 Accepted
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:56130 [200]: GET /student-overview.php
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:56130 Closing
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:56795 Accepted
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:56795 [200]: GET /style.css
+[Wed Oct 28 20:00:46 2026] 127.0.0.1:56795 Closing
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:64580 Accepted
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:64580 [200]: POST /api.php?action=logout
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:64580 Closing
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:54494 Accepted
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:54494 [200]: GET /index.html
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:54494 Closing
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:57398 Accepted
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:56814 Accepted
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:57398 [200]: GET /style.css
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:57398 Closing
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:56814 [200]: GET /api.php?action=current
+[Wed Oct 28 20:00:50 2026] 127.0.0.1:56814 Closing
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:55182 Accepted
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:55182 [200]: POST /api.php?action=login
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:55182 Closing
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:60000 Accepted
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:60000 [200]: GET /admin-dashboard.php
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:60000 Closing
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:60935 Accepted
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:60935 [200]: GET /style.css
+[Wed Oct 28 20:01:01 2026] 127.0.0.1:60935 Closing
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:57656 Accepted
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:50434 Accepted
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:54634 Accepted
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:57656 [200]: GET /api.php?action=admin-summary
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:57656 Closing
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:50434 [200]: GET /api.php?action=admin-items
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:50434 Closing
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:54634 [200]: GET /api.php?action=admin-claims
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:54634 Closing
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:59260 Accepted
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:59260 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 20:01:02 2026] 127.0.0.1:59260 Closing
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:50647 Accepted
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:50647 [200]: GET /report-item.php
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:50647 Closing
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:50354 Accepted
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:54982 Accepted
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:50354 [200]: GET /style.css
+[Wed Oct 28 20:01:08 2026] 127.0.0.1:50354 Closing
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:54982 [200]: GET /admin-monthly-report.php
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:54982 Closing
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:60918 Accepted
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:60918 [200]: GET /style.css
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:60918 Closing
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:61907 Accepted
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:61907 [200]: GET /api.php?action=admin-monthly-report
+[Wed Oct 28 20:01:10 2026] 127.0.0.1:61907 Closing
+[Wed Oct 28 20:01:13 2026] 127.0.0.1:59588 Accepted
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59588 [200]: GET /admin-dashboard.php
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59588 Closing
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59235 Accepted
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59235 [200]: GET /style.css
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59235 Closing
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:54804 Accepted
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59183 Accepted
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:54804 [200]: GET /api.php?action=admin-summary
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:54804 Closing
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:50589 Accepted
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59183 [200]: GET /api.php?action=admin-items
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:59183 Closing
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:50589 [200]: GET /api.php?action=admin-claims
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:50589 Closing
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:60532 Accepted
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:60532 [200]: GET /api.php?action=image&id=1
+[Wed Oct 28 20:01:14 2026] 127.0.0.1:60532 Closing
+[Wed Oct 28 20:01:17 2026] 127.0.0.1:52085 Accepted
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:52085 [200]: GET /admin-monthly-report.php
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:52085 Closing
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:65111 Accepted
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:65111 [200]: GET /style.css
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:65111 Closing
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:60610 Accepted
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:60610 [200]: GET /api.php?action=admin-monthly-report
+[Wed Oct 28 20:01:18 2026] 127.0.0.1:60610 Closing
+[Wed Oct 28 20:05:53 2026] 127.0.0.1:54023 Accepted
+[Wed Oct 28 20:05:53 2026] 127.0.0.1:54023 [200]: GET /index.html
+[Wed Oct 28 20:05:53 2026] 127.0.0.1:54023 Closing
+[Wed Oct 28 20:05:53 2026] 127.0.0.1:51557 Accepted
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:51557 [200]: GET /style.css
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:51557 Closing
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:50765 Accepted
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:50765 [200]: GET /api.php?action=current
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:50765 Closing
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:60403 Accepted
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:60403 [404]: GET /favicon.ico - No such file or directory
+[Wed Oct 28 20:05:54 2026] 127.0.0.1:60403 Closing

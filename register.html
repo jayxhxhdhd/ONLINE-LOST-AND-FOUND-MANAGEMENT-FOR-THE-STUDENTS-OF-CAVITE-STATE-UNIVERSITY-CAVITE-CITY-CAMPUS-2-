@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#153f30">
   <title>Create an account | Campus Finds</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    if (window.location.protocol === "file:") {
+      window.location.replace(`http://127.0.0.1:8000/register.html${window.location.search}${window.location.hash}`);
+    }
+  </script>
 </head>
 <body>
   <div class="page">
@@ -156,8 +161,6 @@
   </div>
 
   <script>
-    const accountsStorageKey = "campus-finds-accounts";
-    const profileStorageKey = "campus-finds-student-profile";
     const registerForm = document.querySelector("#register-form");
     const passwordInput = document.querySelector("#register-password");
     const confirmPasswordInput = document.querySelector("#confirm-password");
@@ -183,24 +186,23 @@
       confirmPasswordInput.dispatchEvent(new Event("input"));
     });
 
-    function readAccounts() {
-      const savedAccounts = localStorage.getItem(accountsStorageKey);
-      if (!savedAccounts) {
-        return [];
-      }
-
-      const accounts = JSON.parse(savedAccounts);
-      if (!Array.isArray(accounts)) {
-        throw new Error("Saved account data has an unexpected format.");
-      }
-      return accounts;
-    }
-
-    async function hashPassword(password, salt) {
-      const encoded = new TextEncoder().encode(`${salt}:${password}`);
-      const digest = await crypto.subtle.digest("SHA-256", encoded);
-      return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
-    }
+    let csrfToken = "";
+    fetch("api.php?action=current", { credentials: "same-origin" })
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error("Unable to connect to the Campus Finds server.");
+        }
+        const session = await response.json();
+        csrfToken = session.csrfToken;
+        if (session.user) {
+          window.location.replace(session.user.role === "admin" ? "admin-dashboard.php" : "student-overview.php");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        registerMessage.textContent = "Could not connect to the server. Start the Campus Finds PHP server and reload this page.";
+        registerMessage.classList.add("error");
+      });
 
     registerForm.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -212,39 +214,38 @@
         confirmPasswordInput.reportValidity();
         return;
       }
+      if (!csrfToken) {
+        registerMessage.textContent = "The server is not ready. Refresh the page and try again.";
+        registerMessage.classList.add("error");
+        return;
+      }
+
+      const formData = new FormData(registerForm);
+      const profile = {
+        firstName: String(formData.get("firstName")).trim(),
+        lastName: String(formData.get("lastName")).trim(),
+        studentNumber: String(formData.get("studentNumber")).trim(),
+        program: String(formData.get("program")).trim(),
+        email: String(formData.get("email")).trim().toLowerCase()
+      };
 
       try {
-        const formData = new FormData(registerForm);
-        const profile = {
-          firstName: String(formData.get("firstName")).trim(),
-          lastName: String(formData.get("lastName")).trim(),
-          studentNumber: String(formData.get("studentNumber")).trim(),
-          program: String(formData.get("program")).trim(),
-          email: String(formData.get("email")).trim().toLowerCase()
-        };
-        const accounts = readAccounts();
-
-        if (accounts.some((account) => account.email === profile.email)) {
-          registerMessage.textContent = "An account with this email already exists. Please log in instead.";
+        const response = await fetch("api.php?action=register", {
+          method: "POST",
+          credentials: "same-origin",
+          headers: { "Content-Type": "application/json", "X-CSRF-Token": csrfToken },
+          body: JSON.stringify({ ...profile, password: passwordInput.value })
+        });
+        const result = await response.json();
+        if (!response.ok) {
+          registerMessage.textContent = result.error || "Unable to create your account.";
           registerMessage.classList.add("error");
           return;
         }
-        if (accounts.some((account) => account.studentNumber === profile.studentNumber)) {
-          registerMessage.textContent = "An account with this student number already exists.";
-          registerMessage.classList.add("error");
-          return;
-        }
-
-        const saltBytes = crypto.getRandomValues(new Uint8Array(16));
-        const salt = Array.from(saltBytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
-        const passwordHash = await hashPassword(passwordInput.value, salt);
-        accounts.push({ ...profile, salt, passwordHash });
-        localStorage.setItem(accountsStorageKey, JSON.stringify(accounts));
-        localStorage.setItem(profileStorageKey, JSON.stringify(profile));
-        window.location.href = "index.html?registered=1";
+        window.location.href = `index.html?registered=1&email=${encodeURIComponent(profile.email)}`;
       } catch (error) {
-        console.error("Unable to register the student account.", error);
-        registerMessage.textContent = "Could not create your account in this browser. Check browser storage settings and try again.";
+        console.error("Unable to register with Campus Finds.", error);
+        registerMessage.textContent = "Could not connect to the server. Check your connection and try again.";
         registerMessage.classList.add("error");
       }
     });
