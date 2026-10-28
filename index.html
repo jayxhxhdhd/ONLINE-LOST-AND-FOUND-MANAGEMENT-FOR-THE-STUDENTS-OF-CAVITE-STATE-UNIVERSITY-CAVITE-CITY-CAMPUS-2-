@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#153f30">
   <title>Log in | Campus Finds</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    if (window.location.protocol === "file:") {
+      window.location.replace(`http://127.0.0.1:8000/index.html${window.location.search}${window.location.hash}`);
+    }
+  </script>
 </head>
 <body>
   <div class="page">
@@ -59,8 +64,8 @@
       <header class="topbar">
         <span class="topbar-campus"><span class="mini-seal" aria-hidden="true">Cv</span> Cavite State University</span>
         <span class="login-portals">
-          <a href="student-overview.html">Student portal</a>
-          <a href="admin-dashboard.html">Admin demo</a>
+          <a href="student-overview.php">Student portal</a>
+          <a href="admin-dashboard.php">School Admin</a>
         </span>
       </header>
 
@@ -79,7 +84,7 @@
             <div class="field">
               <label for="password">Password</label>
               <div class="input-wrap">
-                <input class="password-input" id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your 8-character password" minlength="8" maxlength="8" required>
+                <input class="password-input" id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="8" maxlength="72" required>
                 <button class="visibility-toggle" id="toggle-password" type="button" aria-label="Show password" aria-pressed="false">
                   <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M2.5 12s3.3-6 9.5-6 9.5 6 9.5 6-3.3 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
@@ -91,7 +96,7 @@
 
             <div class="form-options">
               <label class="remember" for="remember">
-                <input id="remember" name="remember" type="checkbox">
+                <input id="remember" name="remember" type="checkbox" required>
                 <span>Remember me</span>
               </label>
               <a class="text-link" href="#forgot-password">Forgot password?</a>
@@ -113,7 +118,7 @@
               <rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>
               <path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
             </svg>
-            <span>Using a shared computer? Leave “Remember me” unchecked and log out when you’re done.</span>
+            <span>Remember me must be checked before login. On a shared computer, log out when you’re done.</span>
           </div>
         </div>
       </section>
@@ -126,11 +131,11 @@
   </div>
 
   <script>
-    const accountsStorageKey = "campus-finds-accounts";
     const passwordInput = document.querySelector("#password");
     const passwordToggle = document.querySelector("#toggle-password");
     const loginForm = document.querySelector("#login-form");
     const formMessage = document.querySelector("#form-message");
+    const rememberCheckbox = document.querySelector("#remember");
 
     passwordToggle.addEventListener("click", () => {
       const showingPassword = passwordInput.type === "password";
@@ -139,51 +144,69 @@
       passwordToggle.setAttribute("aria-label", showingPassword ? "Hide password" : "Show password");
     });
 
-    if (new URLSearchParams(window.location.search).has("registered")) {
+    const query = new URLSearchParams(window.location.search);
+    if (query.has("registered")) {
       formMessage.textContent = "Account created. You can now log in with your campus email and password.";
       formMessage.classList.add("success");
-      const savedProfile = JSON.parse(localStorage.getItem("campus-finds-student-profile") || "{}");
-      if (savedProfile.email) {
-        document.querySelector("#email").value = savedProfile.email;
+      if (query.has("email")) {
+        document.querySelector("#email").value = query.get("email");
       }
     }
 
-    async function hashPassword(password, salt) {
-      const encoded = new TextEncoder().encode(`${salt}:${password}`);
-      const digest = await crypto.subtle.digest("SHA-256", encoded);
-      return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+    async function loadSession() {
+      const response = await fetch("api.php?action=current", { credentials: "same-origin" });
+      if (!response.ok) {
+        throw new Error("Unable to connect to the Campus Finds server.");
+      }
+      const session = await response.json();
+      if (session.user) {
+        window.location.replace(session.user.role === "admin" ? "admin-dashboard.php" : "student-overview.php");
+        return null;
+      }
+      return session.csrfToken;
     }
+
+    let csrfToken = "";
+    loadSession()
+      .then((token) => { csrfToken = token || ""; })
+      .catch((error) => {
+        console.error(error);
+        formMessage.textContent = "Could not connect to the server. Start the Campus Finds PHP server and reload this page.";
+      });
 
     loginForm.addEventListener("submit", async (event) => {
       event.preventDefault();
       formMessage.textContent = "";
       formMessage.classList.remove("success");
+      if (!rememberCheckbox.checked) {
+        formMessage.textContent = "Please check ‘Remember me’ before logging in.";
+        rememberCheckbox.focus();
+        return;
+      }
+      if (!csrfToken) {
+        formMessage.textContent = "The server is not ready. Refresh the page and try again.";
+        return;
+      }
 
       try {
-        const savedAccounts = localStorage.getItem(accountsStorageKey);
-        const accounts = savedAccounts ? JSON.parse(savedAccounts) : [];
-        if (!Array.isArray(accounts)) {
-          throw new Error("Saved account data has an unexpected format.");
-        }
-
-        const email = document.querySelector("#email").value.trim().toLowerCase();
-        const account = accounts.find((savedAccount) => savedAccount.email === email);
-        if (!account || await hashPassword(passwordInput.value, account.salt) !== account.passwordHash) {
-          formMessage.textContent = "Email or password is incorrect. If you do not have an account yet, create one first.";
+        const response = await fetch("api.php?action=login", {
+          method: "POST",
+          credentials: "same-origin",
+          headers: { "Content-Type": "application/json", "X-CSRF-Token": csrfToken },
+          body: JSON.stringify({
+            email: document.querySelector("#email").value.trim().toLowerCase(),
+            password: passwordInput.value
+          })
+        });
+        const result = await response.json();
+        if (!response.ok) {
+          formMessage.textContent = result.error || "Unable to log in.";
           return;
         }
-
-        localStorage.setItem("campus-finds-student-profile", JSON.stringify({
-          firstName: account.firstName,
-          lastName: account.lastName,
-          studentNumber: account.studentNumber,
-          program: account.program,
-          email: account.email
-        }));
-        window.location.href = "student-overview.html";
+        window.location.href = result.user.role === "admin" ? "admin-dashboard.php" : "student-overview.php";
       } catch (error) {
-        console.error("Unable to log in the student account.", error);
-        formMessage.textContent = "Could not log in using this browser. Check browser storage settings and try again.";
+        console.error("Unable to log in to Campus Finds.", error);
+        formMessage.textContent = "Could not connect to the server. Check your connection and try again.";
       }
     });
   </script>
